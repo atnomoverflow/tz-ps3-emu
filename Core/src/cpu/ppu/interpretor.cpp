@@ -946,9 +946,13 @@ void PPUInterpreter::lwzux(u32 rt, u32 ra, ur32 rb)
 
 void PPUInterpreter::mcrf(u32 bf, u32 bfa)
 {
-    m_thread.cr.setField(bf,m_thread.cr.getField(bfa));
+    m_thread.cr.setField(bf, m_thread.cr.getField(bfa));
 }
 
+void PPUInterpreter::mcrfs(u32 bf, u32 bfa)
+{
+    
+}
 
 void PPUInterpreter::lfsx(u32 frt, u32 ra, u32 rb)
 {

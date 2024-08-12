@@ -130,5 +130,12 @@ public:
     void lwarx(u32 rt, u32 ra, u32 rb);
     void lwaux(u32 rt, u32 ra, u32 rb);
     void lwax(u32 rt, u32 ra, u32 rb);
+    void lwbrx(u32 rt, u32 ra, u32 rb);
+    void lwz(u32 rt, u32 ra, s32 d);
+    void lwzu(u32 rt, u32 ra, s32 d);
+    void lwzx(u32 rt, u32 ra, ur32 rb);
+    void lwzux(u32 rt, u32 ra, ur32 rb);
+    void mcrf(u32 bf, u32 bfa);
+    void mcrfs(u32 bf, u32 bfa);
 
 };
